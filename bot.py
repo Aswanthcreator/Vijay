@@ -132,6 +132,4 @@ if __name__ == "__main__":
         asyncio.get_event_loop().run_until_complete(Lazy_start())
     except KeyboardInterrupt:
         logging.info("Service Stopped Bye 👋")
-    except KeyboardInterrupt:
-        logging.info("Service Stopped Bye 👋")
 
