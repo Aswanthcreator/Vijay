@@ -1,15 +1,14 @@
 services:
-  # A Docker web service
   - type: web
-    name: THALAPATHY-FILTER-BOT 
+    name: THALAPATHY-FILTER-BOT
     env: python
+    pythonVersion: 3.10.8        # ⭐ REQUIRED to avoid build errors
     startCommand: python3 bot.py
     buildCommand: pip3 install -U -r requirements.txt
-    repo: https://github.com/1238muj/THALAPATHY-FILTER-BOT.git # optional
-    region: oregon # optional (defaults to oregon)
-    plan: free # optional (defaults to starter)
-    branch: main # optional (defaults to master)
-    numInstances: 1 # optional (defaults to 1)
+    repo: https://github.com/1238muj/THALAPATHY-FILTER-BOT.git
+    region: oregon
+    plan: free
+    branch: main
+    numInstances: 1
     healthCheckPath: /
 
-#End of yaml
